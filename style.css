@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+/*fonte importada do google fonts*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+img{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    padding: 100px;
+}
+
+body{
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #000000;
+    color: #F6F6F6;
+}
+
+.Titulo-destaque  {
+    color: #22D4FD;
+}
+
+.apresentacao {
+    margin: 10% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao__conteudo{
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 25px;
+    font-family: 'Krona One', sans-serif;
+}
+
+.apresentacao__conteudo__texto{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.apresentacao__links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.apresentacao__links__link{
+    background-color: #22D4FD;
+    width: 280px;
+    text-align: center;
+    border-radius: 16px; /*a propriedade border-radius torna as bordas dos links arredondadas */
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none; /* o valor none é responsável por limpar as decorações do elemento âncora*/
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 15px;
+  
+}
+
+
+ 
+/*
+Primeiro, precisa adicionar a classe ao elemento HTML que queremos estilizar. 
+Para isso, usa-se o atributo class dentro da tag, por exemplo: <p class="destaque">.
+Depois, no arquivo CSS, podemos selecionar essa classe usando um ponto (.)
+seguido do nome da classe, por exemplo: .destaque { color: red; }.
+Dessa forma, todas as palavras dentro da tag <p> que 
+tiverem a classe destaque ficarão vermelhas!
+
+Box Model é como uma caixa que envolve o conteúdo, com margem, borda e padding.
+podemos resetar esse estilo usando o seletor * no CSS, definindo margin: 0 e padding: 0.
+Com isso, temos mais controle sobre o posicionamento dos elementos na página!
