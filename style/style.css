@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+/*fonte importada do google fonts*/
+
+/*root serve para definir variáveis globais que podem ser usadas em qualquer lugar do seu CSS. 
+ex: cores, fontes, tamanhos.
+A variável precisa ser declarada com um hífen duplo (--) no início,
+ para que seja reconhecida como variável e não como propriedade CSS.*/
+:root{
+    --cor-primaria: #000000;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #22D4FD;
+    --cor-hover: #272727;
+
+    --font-principal: 'Krona One', sans-serif;
+    --font-secundaria: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+img{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    padding: 100px;
+}
+
+body{
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.Titulo-destaque  {
+    color: var(--cor-terciaria);
+}
+
+.cabecalho{
+    padding: 2% 0 0 15%;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__Link{
+    font-family: var(--font-secundaria);
+    font-size: 24px;
+    font-weight: 600;
+    color: #22D4FD;
+    text-decoration: none;
+}
+.apresentacao {
+    padding: 5% 15%;
+    margin: 10% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao__conteudo{
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 25px;
+    font-family: var(--font-principal);
+}
+
+.apresentacao__conteudo__texto{
+    font-size: 20px;
+    font-family: var(--font-secundaria);
+}
+
+.apresentacao__links{
+    display: flex;/* coloca os quadrados lado a lado */
+    flex-direction: column;/*é a chave para organizar os quadrados verticalmente */
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;/* adiciona espaços iguais entre cada quadrado */
+}
+.apresentacao__links__subtitulo{
+    font-family: var(--font-principal);
+    font-weight: 400;
+    font-size: 24px;
+}
+.apresentacao__links__link{
+   /* background-color: #22D4FD; */
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-terciaria);
+    width: 378px;
+    text-align: center;
+    border-radius: 8px; /*a propriedade border-radius torna as bordas dos links arredondadas */
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none; /* o valor none é responsável por limpar as decorações do elemento âncora*/
+    color: var(--cor-secundaria);
+    font-family: var(--font-secundaria);
+    margin: 0 15px;
+  
+}
+
+/*O hover permite que você adicione um estilo especial a um elemento quando o mouse passa por cima dele.*/
+.apresentacao__links__link:hover{
+    background-color: var(--cor-hover);
+}
+
+.rodape{
+    padding: 24px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-family: var(--font-secundaria);
+    font-size: 24px;
+}
+
+
+ 
+/*
+Primeiro, precisa adicionar a classe ao elemento HTML que queremos estilizar. 
+Para isso, usa-se o atributo class dentro da tag, por exemplo: <p class="destaque">.
+Depois, no arquivo CSS, podemos selecionar essa classe usando um ponto (.)
+seguido do nome da classe, por exemplo: .destaque { color: red; }.
+Dessa forma, todas as palavras dentro da tag <p> que 
+tiverem a classe destaque ficarão vermelhas!
+
+Box Model é como uma caixa que envolve o conteúdo, com margem, borda e padding.
+podemos resetar esse estilo usando o seletor * no CSS, definindo margin: 0 e padding: 0.
+Com isso, temos mais controle sobre o posicionamento dos elementos na página!
